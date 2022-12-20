@@ -1,0 +1,203 @@
+/* font poppins*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+/*=============*/
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px !important;
+    background-image: url(./images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    align-content: center;
+}
+
+.container {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap !important;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+}
+.content1 {
+    width: 50%;
+    height: auto;
+    max-width: 400px;
+    min-width: 392px;
+}
+.content2{ 
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    min-width: 392px;
+}
+.content1 h1 {
+    color: white;
+    font-weight: 700;
+    font-size: xx-large;
+    text-align: left;
+    margin: auto;
+    margin-bottom: 5px;
+    margin-right: 20px;
+}
+.content1 p {
+    color: white;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: left;
+    margin: auto;
+    margin-top: 5px;
+    margin-right: 20px;
+}
+.info-container {
+    background-color: white;
+    border-radius: 10px;
+    border-style: none !important;
+    text-align: center;
+    width: 100%;
+}
+.sub-btn {
+    color: white;
+    background-color: hsl(248, 32%, 49%);
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: hsl(248, 32%, 49%);
+    margin-bottom: 18px;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.sub-btn:hover {
+    color: hsl(248, 32%, 49%);
+    background-color: white;
+    transition: all .2s ease-in-out;
+    text-shadow: hsl(248, 32%, 49%) 1px 1px 10px;
+
+}
+.sub-btn span {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+}
+.claim-btn {
+    width: 87%;
+    padding: 10px;
+    border-radius: 5px;
+    border-style: solid;
+    color: white ;
+    background-color: hsl(154, 59%, 51%);
+    border-color: hsl(154, 59%, 51%);
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+    transition: all .2s ease-in-out;
+    box-shadow: 0 6px hsla(154, 59%, 51%, 0.2);
+}
+.claim-btn:hover {
+    transition: all .2s ease-in-out;
+    color: hsl(154, 59%, 51%);
+    background-color: white;
+    text-shadow: hsl(154, 59%, 51%) 1px 1px 10px;
+    box-shadow: 0 6px rgba(0, 0, 0, 0.2);
+}
+.info-container p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: hsl(246, 25%, 77%);
+}
+.info-container p a {
+    color: hsl(0,100%, 74%);
+    font-size: 10px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.info-container form input {
+    display: block;
+    text-align: left;
+    width: 80%;
+    padding: 10px;
+    margin: 0px auto 15px auto;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: hsl(246, 25%, 77%,50%);
+    font-weight: 600;
+}
+.info-container form {
+    margin-top: 25px;
+}
+.info-container .small {
+    display: block;
+    position: relative;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    left: 12%;
+    top: -10px;
+    color: hsl(0,100%, 74%);
+    font-size: 12px;
+    font-family: 'Poppins' sans-serif;
+    font-style: italic;
+    opacity: 0;
+}
+.form-control{
+    position: relative;
+}
+.form-control img {
+    opacity: 0;
+    position: absolute;
+    right: 10%;
+    top: 10%;
+}
+.info-container form .error {
+    color:hsl(0, 100%, 74%);
+    border-width: 2px;
+    border-color: hsl(0, 100%, 74%);
+}
+
+@media all and (max-width:980px) {
+    .content1 h1{
+        text-align: center;
+        margin: auto 10%;
+        margin-bottom: 10px;
+        margin-top: 30px;
+    }
+    .content1 p {
+        text-align: center;
+        margin: auto 10%;
+        margin-bottom: 30px;
+
+    }
+    .info-container, .sub-btn {
+        width: 80%;
+    }
+    .sub-btn {
+        margin-bottom: 30px;
+    }
+    .content2 {
+        padding-bottom: 30px;
+    }
+    }
+    .sub-btn, .info-container {
+        box-shadow: 0 6px rgba(0, 0, 0, 0.2);
+    }
+
+/*============Footer=============*/
+/* .attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); } */
